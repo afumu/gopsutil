@@ -1,3 +1,4 @@
+//go:build linux
 // +build linux
 
 package disk
@@ -13,7 +14,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/shirou/gopsutil/v3/internal/common"
+	"github.com/afumu/gopsutil/internal/common"
 	"golang.org/x/sys/unix"
 )
 

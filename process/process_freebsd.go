@@ -1,3 +1,4 @@
+//go:build freebsd
 // +build freebsd
 
 package process
@@ -10,9 +11,9 @@ import (
 	"strconv"
 	"strings"
 
-	cpu "github.com/shirou/gopsutil/v3/cpu"
-	"github.com/shirou/gopsutil/v3/internal/common"
-	net "github.com/shirou/gopsutil/v3/net"
+	cpu "github.com/afumu/gopsutil/cpu"
+	"github.com/afumu/gopsutil/internal/common"
+	net "github.com/afumu/gopsutil/net"
 	"golang.org/x/sys/unix"
 )
 

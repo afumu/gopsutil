@@ -1,3 +1,4 @@
+//go:build freebsd || darwin
 // +build freebsd darwin
 
 package net
@@ -10,7 +11,7 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/shirou/gopsutil/v3/internal/common"
+	"github.com/afumu/gopsutil/internal/common"
 )
 
 // Return a list of network connections opened.

@@ -1,3 +1,4 @@
+//go:build linux
 // +build linux
 
 package net
@@ -16,7 +17,7 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/shirou/gopsutil/v3/internal/common"
+	"github.com/afumu/gopsutil/internal/common"
 )
 
 const ( // Conntrack Column numbers
@@ -160,7 +161,8 @@ var netProtocols = []string{
 // If protocols is empty then all protocols are returned, otherwise
 // just the protocols in the list are returned.
 // Available protocols:
-//   ip,icmp,icmpmsg,tcp,udp,udplite
+//
+//	ip,icmp,icmpmsg,tcp,udp,udplite
 func ProtoCounters(protocols []string) ([]ProtoCountersStat, error) {
 	return ProtoCountersWithContext(context.Background(), protocols)
 }

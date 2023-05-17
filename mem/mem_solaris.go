@@ -1,3 +1,4 @@
+//go:build solaris
 // +build solaris
 
 package mem
@@ -10,7 +11,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/shirou/gopsutil/v3/internal/common"
+	"github.com/afumu/gopsutil/internal/common"
 )
 
 // VirtualMemory for Solaris is a minimal implementation which only returns

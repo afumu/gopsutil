@@ -1,3 +1,4 @@
+//go:build freebsd
 // +build freebsd
 
 package disk
@@ -10,7 +11,7 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"github.com/shirou/gopsutil/v3/internal/common"
+	"github.com/afumu/gopsutil/internal/common"
 )
 
 // PartitionsWithContext returns disk partition.

@@ -1,3 +1,4 @@
+//go:build linux
 // +build linux
 
 package docker
@@ -11,8 +12,8 @@ import (
 	"strconv"
 	"strings"
 
-	cpu "github.com/shirou/gopsutil/v3/cpu"
-	"github.com/shirou/gopsutil/v3/internal/common"
+	cpu "github.com/afumu/gopsutil/cpu"
+	"github.com/afumu/gopsutil/internal/common"
 )
 
 // GetDockerStat returns a list of Docker basic stats.

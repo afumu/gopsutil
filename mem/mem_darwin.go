@@ -1,3 +1,4 @@
+//go:build darwin
 // +build darwin
 
 package mem
@@ -7,7 +8,7 @@ import (
 	"fmt"
 	"unsafe"
 
-	"github.com/shirou/gopsutil/v3/internal/common"
+	"github.com/afumu/gopsutil/internal/common"
 	"golang.org/x/sys/unix"
 )
 

@@ -1,3 +1,4 @@
+//go:build linux
 // +build linux
 
 package process
@@ -11,7 +12,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/shirou/gopsutil/v3/internal/common"
+	"github.com/afumu/gopsutil/internal/common"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -1,3 +1,4 @@
+//go:build darwin
 // +build darwin
 
 package host
@@ -13,8 +14,8 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/shirou/gopsutil/v3/internal/common"
-	"github.com/shirou/gopsutil/v3/process"
+	"github.com/afumu/gopsutil/internal/common"
+	"github.com/afumu/gopsutil/process"
 	"golang.org/x/sys/unix"
 )
 

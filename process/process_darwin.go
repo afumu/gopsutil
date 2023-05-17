@@ -1,3 +1,4 @@
+//go:build darwin
 // +build darwin
 
 package process
@@ -11,10 +12,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/shirou/gopsutil/v3/cpu"
-	"github.com/shirou/gopsutil/v3/internal/common"
-	"github.com/shirou/gopsutil/v3/net"
-	"github.com/tklauser/go-sysconf"
+	"github.com/afumu/gopsutil/cpu"
+	"github.com/afumu/gopsutil/internal/common"
+	"github.com/afumu/gopsutil/net"
 	"golang.org/x/sys/unix"
 )
 

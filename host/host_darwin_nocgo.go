@@ -1,12 +1,12 @@
-// +build darwin
-// +build !cgo
+//go:build darwin && !cgo
+// +build darwin,!cgo
 
 package host
 
 import (
 	"context"
 
-	"github.com/shirou/gopsutil/v3/internal/common"
+	"github.com/afumu/gopsutil/internal/common"
 )
 
 func SensorsTemperaturesWithContext(ctx context.Context) ([]TemperatureStat, error) {

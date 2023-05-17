@@ -1,3 +1,4 @@
+//go:build windows
 // +build windows
 
 package disk
@@ -9,7 +10,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/shirou/gopsutil/v3/internal/common"
+	"github.com/afumu/gopsutil/internal/common"
 	"golang.org/x/sys/windows"
 )
 

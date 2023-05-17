@@ -1,3 +1,4 @@
+//go:build openbsd
 // +build openbsd
 
 package process
@@ -14,10 +15,10 @@ import (
 	"strings"
 	"unsafe"
 
-	cpu "github.com/shirou/gopsutil/v3/cpu"
-	"github.com/shirou/gopsutil/v3/internal/common"
-	mem "github.com/shirou/gopsutil/v3/mem"
-	net "github.com/shirou/gopsutil/v3/net"
+	cpu "github.com/afumu/gopsutil/cpu"
+	"github.com/afumu/gopsutil/internal/common"
+	mem "github.com/afumu/gopsutil/mem"
+	net "github.com/afumu/gopsutil/net"
 	"golang.org/x/sys/unix"
 )
 

@@ -1,3 +1,4 @@
+//go:build plan9
 // +build plan9
 
 package process
@@ -6,9 +7,9 @@ import (
 	"context"
 	"syscall"
 
-	"github.com/shirou/gopsutil/v3/cpu"
-	"github.com/shirou/gopsutil/v3/internal/common"
-	"github.com/shirou/gopsutil/v3/net"
+	"github.com/afumu/gopsutil/cpu"
+	"github.com/afumu/gopsutil/internal/common"
+	"github.com/afumu/gopsutil/net"
 )
 
 type Signal = syscall.Note

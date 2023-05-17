@@ -1,3 +1,4 @@
+//go:build openbsd
 // +build openbsd
 
 package mem
@@ -10,7 +11,7 @@ import (
 	"fmt"
 	"os/exec"
 
-	"github.com/shirou/gopsutil/v3/internal/common"
+	"github.com/afumu/gopsutil/internal/common"
 	"golang.org/x/sys/unix"
 )
 

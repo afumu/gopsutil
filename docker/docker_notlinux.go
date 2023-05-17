@@ -1,3 +1,4 @@
+//go:build !linux
 // +build !linux
 
 package docker
@@ -5,7 +6,7 @@ package docker
 import (
 	"context"
 
-	"github.com/shirou/gopsutil/v3/internal/common"
+	"github.com/afumu/gopsutil/internal/common"
 )
 
 // GetDockerStat returns a list of Docker basic stats.
